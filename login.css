@@ -1,0 +1,116 @@
+body {
+    background-color: #f5f5f5; /* Off-white */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    margin: 40px auto 60px;
+    background: linear-gradient(180deg, #2c3e50, #bdc3c7); /* Navy to charcoal */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Adjustments for full display */
+@media (min-width: 1024px) {
+    .container {
+        height: 90vh;
+        width: 30%;
+        padding: 20px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin: 20px auto;
+    width: 80%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#submit {
+    width: 80%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.dark-theme {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.dark-theme .container {
+    background: linear-gradient(180deg, #3e3e3e, #5e5e5e); /* Dark gradient */
+}
+
+.dark-theme input {
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+.dark-theme button {
+    background-color: #444;
+    color: #fff;
+}
